@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Дружелюбный урок пайки для начинающих: пять простых шагов, крупные фотографии и интерактивный прогресс.">
+  <meta name="theme-color" content="#fafafa">
+  <title>Паяльная мастерская — урок для начинающих</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%233dbcb6'/%3E%3Cpath d='M16 45 42 19l5 5-26 26H16v-5Z' fill='%2314333a'/%3E%3Cpath d='m38 15 6-6 11 11-6 6Z' fill='%23ff8c42'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./src/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#lesson">Перейти к уроку</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Паяльная мастерская — наверх">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M13 47 40 20l7 7-27 27h-7v-7Z" fill="currentColor"/>
+          <path d="m37 16 7-7 12 12-7 7Z" fill="#ff8c42"/>
+          <path d="m9 39 7 7" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <span>Паяльная<br>мастерская</span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#lesson">Шаги</a>
+        <a href="#finish">Финиш</a>
+        <a href="#problems">Помощь</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="lesson-tag">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 2.6 6.2L21 11l-6.4 2.8L12 20l-2.6-6.2L3 11l6.4-2.8L12 2Z" fill="currentColor"/></svg>
+          Урок для начинающих
+        </p>
+        <h1 id="hero-title">Качественная пайка — <span>это просто!</span></h1>
+        <p class="hero-lead">Разберёмся, как сделать аккуратное паяное соединение. Смотри на фотографии, повторяй шаги и отмечай свои успехи.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#lesson">
+            Начать урок
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 14 0m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <span class="lesson-meta">5 шагов · всё по порядку</span>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <svg class="hero-doodle hero-doodle-one" viewBox="0 0 90 90" aria-hidden="true">
+          <path d="M45 5v19M45 66v19M5 45h19M66 45h19M17 17l13 13M60 60l13 13M73 17 60 30M30 60 17 73" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+        </svg>
+        <svg class="hero-doodle hero-doodle-two" viewBox="0 0 120 60" aria-hidden="true">
+          <path d="M4 42c20-48 36 38 56-4s34 22 56-18" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 12"/>
+        </svg>
+        <div class="hero-photo-backdrop" aria-hidden="true"></div>
+        <button class="photo-button hero-photo" type="button" data-full="./images/image_1.jpg" data-caption="Примеры аккуратных паяных соединений на плате" aria-label="Увеличить фотографию паяных соединений">
+          <img src="./images/image_1.jpg" alt="Аккуратные блестящие паяные соединения на синей печатной плате" width="800" height="533" fetchpriority="high">
+          <span class="zoom-chip">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5M10.5 7.5v6M7.5 10.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Рассмотреть
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <aside class="safety container" aria-label="Правило безопасности">
+      <svg class="safety-icon" viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M32 6 59 54H5L32 6Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M32 23v15M32 46v1" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <strong>Паяем только вместе со взрослыми!</strong>
+        <p>Паяльник и припой становятся очень горячими. Не торопись, не трогай жало и работай на защищённом столе.</p>
+      </div>
+    </aside>
+
+    <section class="lesson container" id="lesson" aria-labelledby="lesson-title">
+      <div class="section-heading">
+        <h2 id="lesson-title">Пять шагов к успеху</h2>
+        <p>Нажимай на фотографии, чтобы рассмотреть детали, а после каждого шага отмечай результат.</p>
+      </div>
+
+      <div class="progress-panel" aria-label="Прогресс урока">
+        <div class="progress-copy">
+          <strong>Твой прогресс</strong>
+          <span id="progress-label">0 из 5 шагов</span>
+        </div>
+        <div class="progress-track" id="progress-track" role="progressbar" aria-label="Выполнено шагов" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0">
+          <span class="progress-fill" id="progress-fill"></span>
+        </div>
+      </div>
+
+      <div class="steps">
+        <article class="step" id="step-1" data-step="1">
+          <span class="step-number" aria-hidden="true">1</span>
+          <button class="photo-button step-media" type="button" data-full="./images/image_2.jpg" data-caption="Шаг 1. Прогрев контактной площадки и вывода компонента" aria-label="Увеличить фотографию первого шага">
+            <img src="./images/image_2.jpg" alt="Жало паяльника одновременно касается площадки и вывода компонента" width="640" height="427" loading="lazy">
+            <span class="zoom-chip">Увеличить</span>
+          </button>
+          <div class="step-content">
+            <h3>Прогрей место пайки</h3>
+            <p>Прогрей место пайки жалом паяльника. Обязательно нагревай одновременно контактную площадку и вывод или контакт компонента.</p>
+            <p>Небольшая капля припоя на жале поможет быстрее передать тепло.</p>
+            <button class="step-done" type="button" data-complete-step="1" aria-pressed="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Шаг сделан</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="step" id="step-2" data-step="2">
+          <span class="step-number" aria-hidden="true">2</span>
+          <button class="photo-button step-media" type="button" data-full="./images/image_3.jpg" data-caption="Шаг 2. Припой касается и площадки, и вывода" aria-label="Увеличить фотографию второго шага">
+            <img src="./images/image_3.jpg" alt="Припой подан к прогретому соединению на зелёной плате" width="640" height="383" loading="lazy">
+            <span class="zoom-chip">Увеличить</span>
+          </button>
+          <div class="step-content">
+            <h3>Подай припой</h3>
+            <p>Коснись концом припоя места пайки так, чтобы он соприкасался одновременно с контактной площадкой и выводом компонента.</p>
+            <p>Припой должен расплавиться и растечься. Если этого не произошло, прогрей соединение ещё одну-две секунды и попробуй снова.</p>
+            <button class="step-done" type="button" data-complete-step="2" aria-pressed="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Шаг сделан</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="step" id="step-3" data-step="3">
+          <span class="step-number" aria-hidden="true">3</span>
+          <button class="photo-button step-media" type="button" data-full="./images/image_4.jpg" data-caption="Шаг 3. Припой заполняет отверстие и покрывает контактную площадку" aria-label="Увеличить фотографию третьего шага">
+            <img src="./images/image_4.jpg" alt="Расплавленный припой растекается вокруг вывода компонента" width="640" height="480" loading="lazy">
+            <span class="zoom-chip">Увеличить</span>
+          </button>
+          <div class="step-content">
+            <h3>Дай припою растечься</h3>
+            <p>Продолжай нагревать припой и дай ему растечься по месту пайки.</p>
+            <p>Он должен заполнить отверстие и равномерно покрыть как контактную площадку, так и вывод или контакт компонента.</p>
+            <button class="step-done" type="button" data-complete-step="3" aria-pressed="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Шаг сделан</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="step" id="step-4" data-step="4">
+          <span class="step-number" aria-hidden="true">4</span>
+          <div class="cool-illustration" aria-hidden="true">
+            <svg viewBox="0 0 320 240">
+              <path d="M58 170c25-45 47-55 81-33 27-52 88-36 93 8 41 0 47 53 5 57H69c-37 0-42-20-11-32Z" fill="#fafafa" opacity=".92"/>
+              <path d="M160 48v54M133 75h54M141 56l38 38M179 56l-38 38" fill="none" stroke="#14333a" stroke-width="7" stroke-linecap="round"/>
+              <path d="M98 151h124" fill="none" stroke="#3dbcb6" stroke-width="8" stroke-linecap="round"/>
+              <path d="M126 181c12 9 23 9 35 0 12 9 23 9 35 0" fill="none" stroke="#ff8c42" stroke-width="6" stroke-linecap="round"/>
+              <circle cx="253" cy="59" r="25" fill="#ff8c42"/>
+              <path d="M253 45v16l11 7" fill="none" stroke="#14333a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="step-content">
+            <h3>Дай соединению остыть</h3>
+            <p>Когда припоя достаточно и он хорошо растёкся по выводу и контактной площадке, убери паяльник.</p>
+            <p>Теперь немного терпения: дай соединению остыть, не шевеля его.</p>
+            <button class="step-done" type="button" data-complete-step="4" aria-pressed="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Шаг сделан</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="step" id="step-5" data-step="5">
+          <span class="step-number" aria-hidden="true">5</span>
+          <button class="photo-button step-media" type="button" data-full="./images/image_5.jpg" data-caption="Шаг 5. Аккуратная обрезка проволочного вывода бокорезами" aria-label="Увеличить фотографию пятого шага">
+            <img src="./images/image_5.jpg" alt="Бокорезы обрезают лишнюю часть вывода возле платы" width="640" height="427" loading="lazy">
+            <span class="zoom-chip">Увеличить</span>
+          </button>
+          <div class="step-content">
+            <h3>Обрежь лишний вывод</h3>
+            <p>С помощью бокорезов аккуратно обрежь вывод вплотную к плате.</p>
+            <div class="step-note">
+              <strong>Важно:</strong> это нужно только для компонентов с проволочными выводами. Контакты микросхем и их панелек обрезать не требуется.
+            </div>
+            <button class="step-done" type="button" data-complete-step="5" aria-pressed="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Шаг сделан</span>
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <p class="celebration" id="celebration" aria-live="polite" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 2.6 6.2L21 11l-6.4 2.8L12 20l-2.6-6.2L3 11l6.4-2.8L12 2Z" fill="currentColor"/></svg>
+        Отличная работа! Все пять шагов выполнены.
+      </p>
+    </section>
+
+    <section class="finish container" id="finish" aria-labelledby="finish-title">
+      <button class="photo-button finish-photo" type="button" data-full="./images/image_6.jpg" data-caption="Готовая плата с аккуратно обрезанными выводами" aria-label="Увеличить фотографию готовой платы">
+        <img src="./images/image_6.jpg" alt="Вид готовой платы после пайки и обрезки выводов" width="580" height="533" loading="lazy">
+        <span class="zoom-chip">Увеличить</span>
+      </button>
+      <div class="finish-copy">
+        <h2 id="finish-title">Поздравляем!</h2>
+        <p>Ты прошёл весь урок. Теперь ты знаешь, как прогреть соединение, подать припой, дать ему растечься и аккуратно завершить работу.</p>
+        <div class="badge-row">
+          <button class="photo-button badge-photo" type="button" data-full="./images/image_7.jpg" data-caption="Значок паяльщика от Adafruit" aria-label="Увеличить фотографию значка паяльщика">
+            <img src="./images/image_7.jpg" alt="Круглый вышитый значок с паяльником и катушкой припоя" width="400" height="308" loading="lazy">
+          </button>
+          <p>За отличную работу можно получить виртуальный титул <strong>«Молодец-паяльщик»</strong>! А в оригинальном руководстве предлагают наградить себя <a href="https://www.adafruit.com/product/465" target="_blank" rel="noopener noreferrer">настоящим значком Soldering Badge</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="problems" id="problems" aria-labelledby="problems-title">
+      <div class="container problems-inner">
+        <div class="problems-copy">
+          <h2 id="problems-title">Что-то пошло не так?</h2>
+          <p>Не расстраивайся — у всех получается не сразу. На последней странице оригинального руководства собраны фотографии распространённых ошибок и советы по их предотвращению и исправлению.</p>
+          <a class="button button-light" href="https://learn.adafruit.com/adafruit-guide-excellent-soldering/common-problems" target="_blank" rel="noopener noreferrer">
+            Посмотреть ошибки
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 16 16 8M9 8h7v7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <button class="photo-button problems-photo" type="button" data-full="./images/image_8.jpg" data-caption="Примеры распространённых проблем пайки" aria-label="Увеличить фотографию с примерами ошибок пайки">
+          <img src="./images/image_8.jpg" alt="Примеры загрязнённых и неаккуратных паяных соединений" width="727" height="486" loading="lazy">
+          <span class="zoom-chip">Увеличить</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Русская адаптация урока <a href="https://learn.adafruit.com/adafruit-guide-excellent-soldering/making-a-good-solder-joint" target="_blank" rel="noopener noreferrer">Adafruit «Making a good solder joint»</a>.</p>
+      <p>Оригинальная страница обновлена 30 августа 2012 года.</p>
+    </div>
+  </footer>
+
+  <dialog class="photo-dialog" id="photo-dialog" aria-labelledby="dialog-caption">
+    <button class="dialog-close" id="dialog-close" type="button" aria-label="Закрыть увеличенную фотографию">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+    </button>
+    <img id="dialog-image" src="./images/image_1.jpg" alt="">
+    <p id="dialog-caption"></p>
+  </dialog>
+</body>
+</html>
